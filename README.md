@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ESP32GreenhouseController - ESP32 Greenhouse Controller
+=======
+# ESP32 Greenhouse Controller
+>>>>>>> 9652c82 (Update README.md)
 
 This project is an ESP32-based controller for a greenhouse environment, designed to monitor sensors and manage relays. It supports WiFi and GPRS connectivity, data logging to an SD card, and a web configuration portal.
 
