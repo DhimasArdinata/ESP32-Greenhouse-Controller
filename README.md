@@ -1,4 +1,4 @@
-# Project2R_GH1_exp - ESP32 Greenhouse Controller
+# ESP32GreenhouseController - ESP32 Greenhouse Controller
 
 This project is an ESP32-based controller for a greenhouse environment, designed to monitor sensors and manage relays. It supports WiFi and GPRS connectivity, data logging to an SD card, and a web configuration portal.
 
@@ -63,9 +63,6 @@ Open [`src/config.h`](src/config.h:0) and look for the following sections:
 * **API Authentication Token**:
   * `AUTH`: Replace `"YOUR_API_TOKEN"`
 
-**IMPORTANT SECURITY NOTE:**
-If you are making this repository public (e.g., on GitHub), ensure that you **DO NOT COMMIT ACTUAL CREDENTIALS OR SENSITIVE API KEYS** to [`src/config.h`](src/config.h:0). Use the placeholder values. Rely on the Web Configuration Portal to set these values on the device.
-
 ### Building and Uploading
 
 1. Open the project in PlatformIO IDE.
@@ -79,7 +76,7 @@ If you are making this repository public (e.g., on GitHub), ensure that you **DO
 * `.gitignore`: Specifies intentionally untracked files that Git should ignore.
 * `platformio.ini`: PlatformIO project configuration file.
 * `src/`: Contains the main source code for the firmware.
-  * `Project2R_GH1_exp.ino`: Main application file (setup and loop).
+  * `ESP32GreenhouseController.ino`: Main application file (setup and loop).
   * `config.h`: Main configuration header, including default credentials (placeholders), pin definitions, and operational parameters. **Modify placeholders here if not using the web portal for initial setup.**
   * `DeviceConfig.h/.cpp`: Manages loading and saving device configuration from/to NVS.
   * `ConfigPortalManager.h/.cpp`: Manages the WiFiManager-based web configuration portal.
@@ -100,5 +97,4 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file (if available) for details.
-(You might want to add a LICENSE.md file if you haven't already).
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE). See the `LICENSE` file for details.
